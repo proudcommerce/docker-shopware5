@@ -22,3 +22,15 @@ services:
       - db.env
     ports:
       - "3306:3306"
+      
+  shopware5_mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "8025:8025"
+
+  shopware5_phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: shopware5_mysql
