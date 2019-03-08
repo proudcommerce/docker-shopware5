@@ -1,0 +1,24 @@
+version: '3.0'
+services:
+
+  shopware5_web:
+    image: proudcommerce/docker-php72-apache-stretch
+    volumes:
+      - ./web/www/:/var/www/html/:cached
+      - ./web/logs/:/var/log/apache2/
+    env_file:
+      - app.env
+    depends_on:
+      - shopware5_mysql
+    ports:
+      - "80:80"
+            
+  shopware5_mysql:
+    image: mysql:5.7
+    volumes:
+      - ./mysql/:/var/lib/mysql
+    env_file:
+      - app.env
+      - db.env
+    ports:
+      - "3306:3306"
