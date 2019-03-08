@@ -1,12 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-if [ ! -f ./mysql/auto.cnf ]
-then
-	echo "##### login docker registry #####"
-	docker login https://gitlab.proudsourcing.de:4567
-fi
-
 echo "##### starting containers #####"
 docker-compose up -d
 
