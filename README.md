@@ -11,6 +11,8 @@ http://sw.localhost
 ## Container
 - shopware5_web (Apache 2.4 / PHP 7.2)
 - shopware5_mysql (MySQL 5.7)
+- shopware5_mailhog (latest)
+- shopware5_phpmyadmin (latest)
 
 ## Credentials
 
