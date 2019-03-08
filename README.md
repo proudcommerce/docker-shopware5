@@ -6,6 +6,7 @@ http://sw.localhost
 
 1. Clone repository: `git clone https://github.com/proudcommerce/docker-shopware5.git`
 2. Install dev environment: `sh install.sh`
+3. Wait some minutes ... et voilà ;-)
 
 ## Container
 - shopware5_web (Apache 2.4 / PHP 7.2)
