@@ -11,4 +11,5 @@ then
 	docker-compose exec shopware5_web composer install --no-scripts
 	cp files/shopware.env web/www/.env
 	docker-compose exec shopware5_web app/bin/install.sh
+	docker-compose exec shopware5_web chown -R www-data:www-data /var/www/html/
 fi
