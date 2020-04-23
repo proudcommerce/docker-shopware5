@@ -17,3 +17,5 @@ http://sw.localhost
 ## Credentials
 
 - see `.env` and `web/www/.env`
+
+Powered by http://proudcommerce.com/shopware
