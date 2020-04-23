@@ -18,4 +18,6 @@ http://sw.localhost
 
 - see `.env` and `web/www/.env`
 
+## Notice
+
 Powered by http://proudcommerce.com/shopware
